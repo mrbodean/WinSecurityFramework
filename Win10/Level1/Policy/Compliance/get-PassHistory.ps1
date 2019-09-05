@@ -5,6 +5,6 @@ IF($passhistory.count -eq 1){
     $passhistory = $passhistory[1]
     $passhistory.Trim()
 }else{
-#not able to correctly retrieve Account lockout duration
+#not able to correctly retrieve Password History
     "error"
 }

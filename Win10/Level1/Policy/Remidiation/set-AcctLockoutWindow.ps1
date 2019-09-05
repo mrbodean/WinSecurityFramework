@@ -1,3 +1,4 @@
+# !!! Only applies to local accounts !!!
 $lockoutwindow = 15
 $lockoutduration = net accounts|Where-Object{$_ -match "Lockout duration"}
 IF($lockoutduration.count -eq 1){

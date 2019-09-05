@@ -1,3 +1,4 @@
+# !!! Only applies to local accounts !!!
 $lockoutdur = net accounts|Where-Object{$_ -match "Lockout duration"}
 IF($lockoutdur.count -eq 1){
     $lockoutdur = $lockoutdur.split(":")

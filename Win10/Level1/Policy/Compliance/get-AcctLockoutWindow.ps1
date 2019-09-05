@@ -1,3 +1,4 @@
+# !!! Only applies to local accounts !!!
 $lockoutwindow = net accounts|Where-Object{$_ -match "Lockout observation window"}
 IF($lockoutwindow.count -eq 1){
     $lockoutwindow = $lockoutwindow.split(":")

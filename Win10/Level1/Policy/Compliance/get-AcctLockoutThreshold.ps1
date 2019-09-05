@@ -1,3 +1,4 @@
+# !!! Only applies to local accounts !!!
 $lockoutthreshold = net accounts|Where-Object{$_ -match "Lockout threshold"}
 IF($lockoutthreshold.count -eq 1){
     $lockoutthreshold = $lockoutthreshold.split(":")
